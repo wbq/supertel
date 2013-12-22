@@ -3,39 +3,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
-    tools:context=".FullscreenActivity" >
+    tools:context=".activity.LoginActivity" >
 
-    <!--
-         The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc.
-    -->
+ 
 
-    
+ 
 
-    <!--
-         This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows.
-    -->
-   <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-            <View
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+ <LinearLayout
             android:id="@+id/lastuserinfo"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="0dip"
             android:layout_weight="433"
             
-            />
+            android:orientation="vertical" >
 
-        <View
+            <ImageButton
+                android:id="@+id/logoofuser"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hand2"
+               
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/logininfo"
             android:layout_width="wrap_content"
             android:layout_height="0dip"
-              android:background="@drawable/footer"
-            android:layout_weight="847" />
-        </LinearLayout>
+            android:layout_weight="847"
+            android:background="@drawable/bottom"
+            android:orientation="vertical" >
+            
+    </LinearLayout>
+</LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -59,11 +65,6 @@
                 android:layout_weight="1"
                 android:text="@string/dummy_button" />
         </LinearLayout>
-
-        
-
-         
-      
     </FrameLayout>
 
 </FrameLayout>
